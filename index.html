@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <title>Cold Pursuit</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
         <nav id="myTopnav">
             <a href="#section01" class="active">HOME</a>
             <a href="https://www.fandango.com/cold-pursuit-215413/movie-times" target="_blank">GET TICKETS</a>
-            <a id="playme" href="#video" onclick="revealVideo('video','youtube')">TRAILER</a>
+            <a id="playme" href="#video" onclick="revealVideo()">TRAILER</a>
             <a href="#about">SYNOPSIS</a>
             <a href="">GALLERY</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -22,23 +23,19 @@
             </a>
       </header>
       <section id="section01">
-
-
-
-
       </section>
-        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')">
+      <div id="video" class="lightbox" onclick="hideVideo()">
           <div class="lightbox-container">
             <div class="lightbox-content">
-              <button onclick="hideVideo('video','youtube')" class="lightbox-close">
-                Close | ✕
+              <button onclick="hideVideo();" class="lightbox-close">
+                &times;
               </button>
               <div class="video-container">
                   <iframe width="560" height="315" src="https://www.youtube.com/embed/0phuNQQ_gHI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
           </div>
-        </div>
+      </div>
 
   <script src="script.js"></script>
   </body>

@@ -8,17 +8,21 @@ function myFunction() {
   }
 }
 
-// Function to reveal lightbox and adding YouTube autoplay
-function revealVideo(div,video_id) {
-  var video = document.getElementById("video").src;
-  document.getElementById("video").src = video+'&autoplay=1'; // adding autoplay to the URL
-  document.getElementById("video").style.display = 'block';
+
+function hideVideo() {
+  var x = document.getElementById("video");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
 }
 
-// Hiding the lightbox and removing YouTube autoplay
-function hideVideo(div,video_id) {
-  var video = document.getElementById("video").src;
-  var cleaned = video.replace('&autoplay=1',''); // removing autoplay form url
-  document.getElementById("video").src = cleaned;
-  document.getElementById("video").style.display = 'none';
+function revealVideo() {
+  var x = document.getElementById("video");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
