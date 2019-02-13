@@ -7,22 +7,79 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
     <title>Cold Pursuit</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <nav id="myTopnav">
-            <a href="#section01" class="active">HOME</a>
+            <a href="#section01">HOME</a>
             <a href="https://www.fandango.com/cold-pursuit-215413/movie-times" target="_blank">GET TICKETS</a>
             <a id="playme" href="" onclick="revealVideo()">TRAILER</a>
-            <a href="#about">SYNOPSIS</a>
-            <a href="">GALLERY</a>
+            <a href="#section02">SYNOPSIS</a>
+            <div class="share">
+              <div class="facebook_share">
+              </div>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/coldpursuitmovie/" target="_blank">
+                SHARE
+              </a>
+            </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
               <i class="fa fa-bars"></i>
             </a>
       </header>
       <section id="section01">
+        <div class="background">
+          <div class="left_column">
+          <img class="intro_image" src="../images/intro_image.png">
+          <div class="red_button">
+            <a href="https://www.fandango.com/cold-pursuit-215413/movie-times" target="_blank">GET TICKETS</a>
+          </div>
+          <div class="social_media_icons">
+            <a href="https://www.facebook.com/coldpursuitmovie/" target="_blank">
+              <img class="social_icon" src="../images/facebook.svg">
+            </a>
+            <a href="https://twitter.com/ColdPursuit?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank">
+              <img class="social_icon" src="../images/twitter.svg">
+            </a>
+            <a href="https://www.instagram.com/coldpursuitmovie/" target="_blank">
+              <img class="social_icon" src="../images/instagram.svg">
+            </a>
+          </div>
+          </div>
+            <img class="liam_image" src="../images/liam_image.png">
+        </div>
+      </section>
+      <section id="section02">
+        <div class="synopsis">
+          <div class="description">
+            <p>Nels Coxman's quiet life as a snowplow driver comes crashing down when his beloved son dies under mysterious circumstances. His search for the truth soon becomes a quest for revenge against a psychotic drug lord named Viking and his sleazy henchmen. Transformed from upstanding citizen to coldblooded vigilante, Coxman unwittingly sets off a chain of events that includes a kidnapping, a series of deadly misunderstandings and a turf war between Viking and a rival boss.
+            </p>
+          </div>
+          <div class="cast_list">
+            <div class="cast_item">
+              <strong>DIRECTED BY</strong>
+              <p>Hans Peter Moland</p>
+            </div>
+            <div class="cast_item">
+              <strong>WRITTEN BY</strong>
+              <p>Frank Baldwin</p>
+            </div>
+            <div class="cast_item">
+              <strong>RATED</strong>
+              <p>R</p>
+            </div>
+            <div class="cast_item">
+              <strong>PRODUCED BY</strong>
+              <p>Michae Shamberb, Finn Gjerdrum, Stein B. Kvae, Ameet Shukla</p>
+            </div>
+            <div class="cast_item">
+              <strong>CAST</strong>
+              <p>Liam Neeson, Tom Bateman, Tom Jackson, Emily Rossum, Domenick Lombardozzi, Julia Jones</p>
+            </div>
+          </div>
+        </div>
       </section>
       <div id="video" class="lightbox" onclick="hideVideo()">
           <div class="lightbox-container">
@@ -36,6 +93,19 @@
             </div>
           </div>
       </div>
+    <footer>
+      <span>TERMS</span>
+      <span>PRIVACY</span>
+      <span>CREDIT</span>
+    </footer>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
   <script src="script.js"></script>
   </body>
